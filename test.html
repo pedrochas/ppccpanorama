@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 960px;
+        height: 480px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://c2.staticflickr.com/6/5511/25299088769_98d6d408a7_o_d.jpg",
+    "autoRotate": -4,
+    "autoRotateInactivityDelay": 3000,
+    "autoLoad": true
+});
+</script>
+
+</body>
+</html>
